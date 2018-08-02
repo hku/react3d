@@ -1,0 +1,49 @@
+{
+  "name": "react3d",
+  "version": "0.1.0",
+  "description": "a small javascript library to glue Threejs and Reactjs ",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "lint": "eslint src/**; exit 0",
+    "lint:watch": "esw -w src/**",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hku/react3d.git"
+  },
+  "keywords": [
+    "threejs",
+    "react"
+  ],
+  "author": "K. Huang <kunhuang09@gmail.com> (https://hku.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "three": "^0.87.0",
+    "three-orbitcontrols": "^2.1.2",
+    "tween": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.18.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "~2.0.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "bugs": {
+    "url": "https://github.com/hku/react3d/issues"
+  },
+  "homepage": "https://github.com/hku/react3d#readme"
+}
