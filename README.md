@@ -2,8 +2,8 @@
 
 a light javascript library to glue threejs and reactjs
 
-[examples](https://github.com/hku/react3d-examples.git) 
-[blog](https://hku.github.io/articles/react3d/)
+- [examples](https://github.com/hku/react3d-examples.git) 
+- [blog](https://hku.github.io/articles/react3d/)
 
 ## Installation
 
