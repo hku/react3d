@@ -1,4 +1,4 @@
-#react3d
+# react3d
 
 a light javascript library to glue threejs and reactjs
 
@@ -10,7 +10,7 @@ a light javascript library to glue threejs and reactjs
 Using npm
 
 ```
-npm i react3d
+npm i @kunhuang09/react3d
 ```
 
 In javascript
