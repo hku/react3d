@@ -1,8 +1,8 @@
 import TWEEN from "tween"
 import {PerspectiveCamera, WebGLRenderer} from "three";
-import Object3D from "./Object3D.jsx";
+import Object3D from "./Object3D.js";
 import React from "react";
-import Animations from "../utils/Animations.jsx"
+import Animations from "../utils/Animations.js"
 
 class Camera extends Object3D {
 	objContructor(props){
@@ -30,7 +30,6 @@ class Camera extends Object3D {
 		const camera = this.obj;
 		const scene = this.scene;
 		const webGLRenderer = this.webGLRenderer;
-		
 		TWEEN.update();
 		Animations.update();
 		

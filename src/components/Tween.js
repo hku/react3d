@@ -30,8 +30,6 @@ class Tween extends React.Component {
 	render(){
 
 		const {data, view} = this.props;
-		console.log(data)
-		console.log(view)
 		return view(this.state);
 	}
 }

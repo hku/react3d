@@ -1,4 +1,4 @@
-import Object3D from "./Object3D.jsx";
+import Object3D from "./Object3D.js";
 import React from "react";
 import {PointLight as ThreePointLight} from "three";
 

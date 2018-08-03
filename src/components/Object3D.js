@@ -1,15 +1,14 @@
 import React from "react";
 import {Object3D as ThreeObject3D} from "three"
-import Animations from "../utils/Animations.jsx"
+import Animations from "../utils/Animations.js"
 
 class Object3D extends React.Component {
 	constructor(props) {
 		super(props);
-		const {update} = props;
-		
-
-
+		const {update} = props
 		this.obj = this.objContructor(props);
+
+
 		
 		if (update instanceof Function) {
 			this.updateObj = { update: () => update(this.obj) }
@@ -42,6 +41,9 @@ class Object3D extends React.Component {
 
 		this.objWillUnmount();
 	}
+	componentDidUpdate(prevProps) {
+		this.objDidUpdate(prevProps)
+	}
 	render(){
 		return <span>{this.props.children}</span>;
 	}
@@ -60,6 +62,7 @@ class Object3D extends React.Component {
 		return obj
 	}
 	objWillReceiveProps(nextProps){}
+	objDidUpdate(prevProps){}
 	objDidMount(){
 	}
 	objWillUnmount(){}

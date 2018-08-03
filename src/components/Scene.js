@@ -9,11 +9,12 @@ class Scene extends React.Component {
 		this.canvas = document.createElement("canvas");
 		this.canvas.width = width;
 		this.canvas.height = height;
-		this.canvas.style = style;
+		for(let k in style) {
+			this.canvas.style[k] = style[k];
+		}
 	}
 	componentDidMount(){
-		const box = this.refs.container3d;
-		box.appendChild(this.canvas);
+		this.box.appendChild(this.canvas);
 	}
 	componentWillUnmount(){
 		const box = this.refs.container3d;
@@ -21,7 +22,9 @@ class Scene extends React.Component {
 	}
 	render(){
 		const {width, height, style} = this.props;
-		return <div ref="container3d">{this.props.children}</div>
+		return <div  ref={inst => {
+    			this.box = inst;
+  		}} >{this.props.children}</div>
 	}
 	getChildContext() {
 	    return {
