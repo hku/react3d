@@ -16,6 +16,6 @@ npm i @kunhuang09/react3d
 In javascript
 
 ```
-import {Scene, Camera, PointLight, Object3D, OrbitControls, Tween} from "react3d"
+import {Scene, Camera, PointLight, Object3D, OrbitControls, Tween} from "@kunhuang09/react3d"
 ```
 
