@@ -1,3 +1,6 @@
-## readme
+## react3d
 
-https://medium.com/@_alanbsmith/building-a-react-component-library-part-1-d8a1e248fe6c
+a light javascript library to glue threejs and reactjs
+
+usage examples can be found [here](https://github.com/hku/react3d-examples.git) 
+
