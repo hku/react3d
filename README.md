@@ -1,6 +1,21 @@
-## react3d
+#react3d
 
 a light javascript library to glue threejs and reactjs
 
-usage examples can be found [here](https://github.com/hku/react3d-examples.git) 
+[examples](https://github.com/hku/react3d-examples.git) 
+[blog](https://hku.github.io/articles/react3d/)
+
+## Installation
+
+Using npm
+
+```
+npm i react3d
+```
+
+In javascript
+
+```
+import {Scene, Camera, PointLight, Object3D, OrbitControls, Tween} from "react3d"
+```
 
