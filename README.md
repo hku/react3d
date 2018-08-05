@@ -23,7 +23,7 @@ import {Scene, Camera, PointLight, Object3D, OrbitControls, Tween} from "@kunhua
 
 Here is a simple demo：
 
-！[demo](https://hku.github.io//articles/react3d/img/capture.gif)
+![demo](https://hku.github.io//articles/react3d/img/capture.gif)
 
 The corresponding jsx code:
 
